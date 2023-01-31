@@ -1,0 +1,89 @@
+/* reset */
+
+*{
+    /* propiedad para el espacio externo */
+    margin: 0;
+    /* propiedad para el espacio interno */
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lilita One', cursive;
+    color: rgb(39, 39, 39);
+    font-size: 1.2rem;
+}
+
+/* ESTILOS DE HEADER */
+
+header{
+    background-color: rgb(215, 236, 254);
+    display: flex;
+    display: block;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+header .contenedorLogo img{
+    width: 25vh;
+    margin-top: -0.8rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header nav ul li a{
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+}
+
+/* Estilos del main */
+
+.contenedorPrincipal{
+    text-align: center;
+}
+
+.contenedorNena{
+    text-align: left;
+    margin-left: 200px;
+}
+
+.contenedorNene{
+    text-align: right;
+    margin-right: 200px;
+}
+
+.contenedorSecundario{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilos del footer */
+
+footer{
+    background-color: rgb(255, 200, 221);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h4{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.iconosRedes{
+    
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-left: 15px;
+}
