@@ -26,6 +26,11 @@ header{
     text-align: center;
 }
 
+header .btn img{
+    width: 20px;
+    height: 20px;
+}
+
 header .contenedorLogo img{
     width: 25vh;
     margin-top: -0.8rem;

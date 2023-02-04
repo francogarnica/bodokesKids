@@ -27,32 +27,122 @@
             <input type="text" placeholder="Buscar" autocomplete="off">
         </div> -->
         
-        <div class="contenedorLogo">
+        <!-- <div class="contenedorLogo">
             <img src="img/logo.png" alt="Logo de Bodokes Kids">
-        </div>
+        </div> -->
 
         <!-- menu de navegacion -->
         
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a></li>
-                <li>
-                    <a href="pages/productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="pages/sobreNosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="pages/talles.html">TALLES</a>
-                </li>
-            </ul>
-        </nav>
-    
-    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col row align-items-center ms-2">
+                    <!-- BUSCADOR -->
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">
+                                <img src="img/lupa.png" alt="Icono de lupa">
+                            </button>
+                          </form>
+                        </div>
+                      </nav>
+                </div>
+                <div class="col">
+                    <!-- IMAGEN LOGO -->
+                    <div class="contenedorLogo">
+                        <img src="img/logo.png" alt="Logo de Bodokes Kids">
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- BOTON CARRITO DE COMPRAS Y PERFIL -->
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="img/perfil.png" alt="Icono de perfil">
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">No disponible por el momento!</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Todavia estamos trabajando en esta funcion :)
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="img/carrito.png" alt="Icono de carrito de compras">
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">No disponible por el momento!</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Todavia estamos trabajando en esta funcion :)
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <!-- NAV -->
+            <div class="row">
+
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/sobreNosotros.html">NOSOTROS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/talles.html">TALLES</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                
+            </div>
+
+
+
+        </div>
+
     </header>
 
     <main>
