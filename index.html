@@ -145,8 +145,53 @@
 
     </header>
 
-    <main>
-        <div class="contenedorPrincipal">
+
+    <main class="container-fluid">
+    
+        <!-- CAROUSEL -->
+        <div class="row">
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/imagenCarousel1.png" class="d-block w-100" alt="imagen de home">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/imagenCarousel2.png" class="d-block w-100" alt="imagen de home 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/imagenCarousel3.png" class="d-block w-100" alt="imagen de home 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </div>
+
+        <!-- 2 FOTOS Y INFO -->
+
+        <div class="row contenedoresMain">
+            <div class="col">
+                <img src="img/osito.jpg" class="img-fluid" alt="...">
+            </div>
+
+            <div class="col">
+               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur minus ad est necessitatibus, vero, et numquam dicta optio inventore voluptatem voluptatibus magni eveniet neque deleniti voluptates natus animi commodi.</p>
+            </div>
+                <img src="img/conejita.jpg" class="img-fluid" alt="...">
+            <div class="col">
+
+            </div>
+        </div>
+
+        <!-- <div class="contenedorPrincipal">
             <h2>Tienda Online
             </h2>
         </div>
@@ -162,16 +207,41 @@
         <div></div>
         <div class="contenedorSecundario">
             <h2>POPULAR AHORA!</h2>
-        </div>
+        </div> -->
         
     </main>
 
-    <footer>
-        <h4>Nuestras redes sociales</h4>
+    <footer class="container-fluid">
 
-        <!-- falta link de whatsapp -->
+        <div class="row">
+            <div class="col">
+                <p> Nos encontramos en calle ituzaingo, Salta capital</p>
+            </div>
+
+            <div class="col">
+                <p> Nuestras redes sociales</p>
+
+                <a href="https://wa.me/message/IKSR6G27BWDHP1" target="_blank">
+                    <img class="iconosRedes" src="img/whatsapp.png" alt="Logo de Whatsapp">
+                </a>
+        
+                <a href="https://www.instagram.com/bodokeskidss/" target="_blank">
+                    <img class="iconosRedes" src="img/instagram.png" alt="Logo de Instagram">
+                </a>
+                
+                <a href="https://www.facebook.com/profile.php?id=100063699394113" target="_blank">
+                    <img class="iconosRedes" src="img/facebook.png" alt="Logo de Facebook">
+                </a>
+            
+            </div>
+
+        </div>
+
+
+
+        <!-- <h4>Nuestras redes sociales</h4> -->
     
-        <a href="https://wa.me/message/IKSR6G27BWDHP1" target="_blank">
+        <!-- <a href="https://wa.me/message/IKSR6G27BWDHP1" target="_blank">
             <img class="iconosRedes" src="img/whatsapp.png" alt="Logo de Whatsapp">
         </a>
 
@@ -181,10 +251,10 @@
         
         <a href="https://www.facebook.com/profile.php?id=100063699394113" target="_blank">
             <img class="iconosRedes" src="img/facebook.png" alt="Logo de Facebook">
-        </a>
+        </a> -->
         
 
-        <p>BODOKIDS 2023 © Todos los derechos reservados</p>
+        <!-- <p>BODOKIDS 2023 © Todos los derechos reservados</p> -->
     </footer>
 
     <!-- script JS bootstrap -->
