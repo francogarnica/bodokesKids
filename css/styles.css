@@ -36,14 +36,6 @@ header .contenedorLogo img{
     margin-top: -0.8rem;
 }
 
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
 
 header nav ul li a{
     color: rgb(20, 20, 20);
@@ -52,43 +44,14 @@ header nav ul li a{
 
 /* Estilos del main */
 
-main .carousel-inner {
-    height: 60vh;
-}
 
-main .slide img {
+/* main .slide img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     
-}
+} */
 
-main .contenedoresMain img{
-    height: 500px;
-    width: 500px;
-}
-
-
-
-
-.contenedorPrincipal{
-    text-align: center;
-}
-
-.contenedorNena{
-    text-align: left;
-    margin-left: 200px;
-}
-
-.contenedorNene{
-    text-align: right;
-    margin-right: 200px;
-}
-
-.contenedorSecundario{
-    text-align: center;
-    margin-top: 50px;
-}
 
 /* Estilos del footer */
 
