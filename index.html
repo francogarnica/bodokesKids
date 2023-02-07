@@ -17,131 +17,168 @@
     <title>Bodokes Kids - Home</title>
 </head>
 <body>
-
     
+    <header class="container-fluid">
 
-    <header>
+    <!-- menu de navegacion -->
 
-        <!-- Buscador -->
-        <!-- <div class="buscador">
-            <input type="text" placeholder="Buscar" autocomplete="off">
-        </div> -->
-        
-        <!-- <div class="contenedorLogo">
-            <img src="img/logo.png" alt="Logo de Bodokes Kids">
-        </div> -->
+        <div class="row primeraFilaHeader">
 
-        <!-- menu de navegacion -->
-        
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col row align-items-center ms-2">
-                    <!-- BUSCADOR -->
-                    <nav class="navbar">
-                        <div class="container-fluid">
-                          <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-light" type="submit">
-                                <img src="img/lupa.png" alt="Icono de lupa">
-                            </button>
-                          </form>
-                        </div>
-                      </nav>
-                </div>
-                <div class="col">
-                    <!-- IMAGEN LOGO -->
-                    <div class="contenedorLogo">
-                        <img src="img/logo.png" alt="Logo de Bodokes Kids">
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-end align-items-center">
-                    <!-- BOTON CARRITO DE COMPRAS Y PERFIL -->
+            <div class="col row columnaBuscador align-items-center ms-2">
 
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="img/perfil.png" alt="Icono de perfil">
-                    </button>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">No disponible por el momento!</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Todavia estamos trabajando en esta funcion :)
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="img/carrito.png" alt="Icono de carrito de compras">
-                    </button>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">No disponible por el momento!</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Todavia estamos trabajando en esta funcion :)
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-            </div>
-            <!-- NAV -->
-            <div class="row">
-
-                <nav class="navbar navbar-expand-lg ">
+                <!-- BUSCADOR -->
+                <nav class="navbar buscador">
                     <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="pages/sobreNosotros.html">NOSOTROS</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="pages/talles.html">TALLES</a>
-                          </li>
-                        </ul>
-                      </div>
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">
+                            <img src="img/lupa.png" alt="Icono de lupa">
+                        </button>
+                        </form>
                     </div>
-                  </nav>
-                
+                </nav>
+
+                <!-- NAV SOLO DE CELULAR -->
+
+                <nav class="navbar navSoloCelular">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header contenedorLogo2 mx-auto">
+                                <img src="img/logo2.png" alt="Bodokes Kids" class="img-fluid">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pages/sobreNosotros.html">NOSOTROS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pages/talles.html">TALLES</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">
+                                        <img src="img/lupa.png" alt="Icono de lupa">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                  
+
             </div>
 
+            <div class="col columnaLogo">
+                <!-- IMAGEN LOGO -->
+                <div class="contenedorLogo">
+                    <img src="img/logo.png" alt="Logo de Bodokes Kids">
+                </div>
+            </div>
 
+            <div class="col columnaBotones d-flex justify-content-end align-items-center">
+                <!-- BOTON CARRITO DE COMPRAS Y PERFIL -->
+
+                <!-- Button trigger modal -->
+                <button type="button" class="botonPerfil btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="img/perfil.png" alt="Icono de perfil">
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">No disponible por el momento!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Todavia estamos trabajando en esta funcion :)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Button trigger modal -->
+                <button type="button" class="botonCarrito btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="img/carrito.png" alt="Icono de carrito de compras">
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">No disponible por el momento!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Todavia estamos trabajando en esta funcion :)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
 
         </div>
+        <!-- NAV de pc -->
+        <div class="row segundaFilaHeader">
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/sobreNosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/talles.html">TALLES</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </div>
+
 
     </header>
 
@@ -150,7 +187,7 @@
     
         <!-- CAROUSEL -->
         <div class="row">
-            <div class="col-lg-11 mx-auto mt-4">
+            <div class="col-lg-11 col-ms-12 mx-auto mt-4">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -175,15 +212,26 @@
         <!-- 2 FOTOS Y INFO -->
 
         <div class="row">
-            <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center p-4">
+            <div class="img-ninios col-lg-4 col-sm-12 d-flex align-items-center justify-content-center p-4">
                 <img src="img/niños.png" class="img-fluid" alt="..." style="width: 65%">
             </div>
 
-            <div class="col-lg-4 col-sm-12 ">
-                <p> info info info info info info info info info info info info info info info info info infoinfo info info info info infoinfo info info info info info </p>
+            <div class="col-lg-4 col-sm-12 d-flex flex-column justify-content-center columnaInfo my-4">
+                <div class="row text-center">
+                    <img src="img/reloj.png" alt="icono de reloj" class="iconosMain img-fluid">
+                    <p><br> Horario de 9:30 a 13:00 y 17:30 a 21:30 </p>
+                </div>
+                <div class="row text-center">
+                    <img src="img/celular.png" alt="icono de celular" class="iconosMain img-fluid">
+                    <p><br>Consultanos cualquier duda por mensaje</p>
+                </div>
+                <div class="row text-center">
+                    <img src="img/mapa.png" alt="icono de punto de ubicacion" class="iconosMain img-fluid">
+                    <p><br>Encontranos en Urquiza 227, Salta Capital </p>
+                </div>
             </div>
 
-            <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center p-4">
+            <div class="img-ninios col-lg-4 col-sm-12 d-flex align-items-center justify-content-center p-4">
                 <img src="img/niñas.png" class="img-fluid" alt="..." style="width: 65%">
             </div>
         </div>

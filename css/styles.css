@@ -32,7 +32,7 @@ header .btn img{
 }
 
 header .contenedorLogo img{
-    width: 25vh;
+    width: 22vh;
     margin-top: -0.8rem;
 }
 
@@ -42,8 +42,41 @@ header nav ul li a{
     text-decoration: none;
 }
 
-/* Estilos del main */
+header .navSoloCelular{
+    display: none;
+}
 
+header .contenedorLogo2{
+    width: 50%;
+}
+
+
+
+/*//////////////////// Estilos del main //////////////// */
+
+
+/* ANIMACION */
+
+.img-ninios {
+    transition: 0.5s;
+}
+
+.img-ninios:hover {
+    transform: scale(1.1);
+    opacity: 70%;
+    transition: 0.5s;
+}
+
+main .columnaInfo{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+main .iconosMain{
+    width: 16%;
+    display: block;
+    margin: 0 auto;
+}
 
 /* main .slide img {
     width: 100%;
@@ -66,4 +99,52 @@ footer{
     height: 32px;
     display: inline-block;
     margin-left: 15px;
+}
+
+/* MQ DE TABLET (EN PROCESO)*/
+
+@media screen and (max-width:1024px) {
+
+    header .contenedorLogo img{
+        width: 15vh;
+        margin-top: -0.8rem;
+    }
+
+    header .navSoloCelular {
+        display: block;
+    }
+
+    header .buscador {
+        display: none;
+    }
+
+    header .segundaFilaHeader {
+        display: none;
+    }
+
+   
+}
+/* MQ de MOBILE */
+
+
+@media screen and (max-width:576px) {
+
+    header .contenedorLogo img{
+        width: 15vh;
+        margin-top: -0.8rem;
+    }
+
+    header .navSoloCelular {
+        display: block;
+    }
+
+    header .buscador {
+        display: none;
+    }
+
+    header .segundaFilaHeader {
+        display: none;
+    }
+
+   
 }
