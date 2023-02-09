@@ -20,11 +20,9 @@
     
     <header class="container-fluid">
 
-    <!-- MENU DE NAVEGACION -->
+        <div class="row primera-fila-header">
 
-        <div class="row primeraFilaHeader">
-
-            <div class="col row columnaBuscador align-items-center ms-2">
+            <div class="col row columna-buscador align-items-center ms-2">
 
                 <!-- BUSCADOR -->
                 <nav class="navbar buscador">
@@ -40,7 +38,7 @@
 
                 <!-- NAV QUE SOLO APARECE EN CELULAR -->
 
-                <nav class="navbar navSoloCelular">
+                <nav class="navbar nav-solo-celular">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                             aria-controls="offcanvasNavbar">
@@ -48,14 +46,14 @@
                         </button>
                         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header contenedorLogo2 mx-auto">
+                            <div class="offcanvas-header contenedor-logo2 mx-auto">
                                 <img src="img/logo2.png" alt="Bodokes Kids" class="img-fluid">
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
                                 <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
@@ -84,23 +82,22 @@
 
             </div>
 
-            <div class="col columnaLogo">
+            <div class="col columna-logo">
 
                 <!-- IMAGEN LOGO -->
-                <div class="contenedorLogo">
+                <div class="contenedor-logo">
                     <img src="img/logo.png" alt="Logo de Bodokes Kids">
                 </div>
             </div>
 
-            <div class="col columnaBotones d-flex justify-content-end align-items-center">
-                <!-- BOTON CARRITO DE COMPRAS Y PERFIL -->
+            <div class="col columna-botones d-flex justify-content-end align-items-center">
 
-                <!-- Button trigger modal -->
-                <button type="button" class="botonPerfil btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <!-- BOTON PERFIL -->
+
+                <button type="button" class="boton-perfil btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="img/perfil.png" alt="Icono de perfil">
                 </button>
                 
-                <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -118,13 +115,12 @@
                     </div>
                 </div>
                 
+                <!-- BOTON CARRITO -->
 
-                <!-- Button trigger modal -->
-                <button type="button" class="botonCarrito btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="boton-carrito btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="img/carrito.png" alt="Icono de carrito de compras">
                 </button>
                 
-                <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -143,8 +139,10 @@
                 </div>
             </div>
         </div>
-        <!-- NAV de pc -->
-        <div class="row segundaFilaHeader">
+
+        <!-- NAVBAR de pc -->
+
+        <div class="row segunda-fila-header">
 
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
@@ -185,8 +183,8 @@
     
         <!-- CAROUSEL -->
         <div class="row">
-            <div class="col-lg-11 col-ms-12 mx-auto mt-4">
-                <div id="carouselExample" class="carousel slide">
+            <div class="col-lg-11 col-sm-12 mx-auto mt-4">
+                <div id="carouselExample" class="carousel carousel-dark slide">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="img/imagenCarousel1.png" class="d-block w-100" alt="imagen de home">
@@ -211,7 +209,7 @@
 
         <div class="row">
             <div class="img-ninios col-lg-4 col-sm-12 d-flex align-items-center justify-content-center p-4">
-                <img src="img/niños.png" class="img-fluid" alt="..." style="width: 65%">
+                <img src="img/nenes.png" class="img-fluid" alt="imagen osito" style="width: 65%">
             </div>
 
             <div class="col-lg-4 col-sm-12 d-flex flex-column justify-content-center columnaInfo my-4">
@@ -225,24 +223,24 @@
                 </div>
                 <div class="row text-center">
                     <img src="img/mapa.png" alt="icono de punto de ubicacion" class="iconosMain img-fluid">
-                    <p><br>Encontranos en Urquiza 227, Salta Capital </p>
+                    <p><br>Encontranos en Ituzaingo 227,Salta Capital </p>
                 </div>
             </div>
 
             <div class="img-ninios col-lg-4 col-sm-12 d-flex align-items-center justify-content-center p-4">
-                <img src="img/niñas.png" class="img-fluid" alt="..." style="width: 65%">
+                <img src="img/nenas.png" class="img-fluid" alt="imagen conejita" style="width: 65%">
             </div>
         </div>
         
-        <div class="row textoPopularAhora text-center m-4 p-2">
+        <div class="row texto-popular-ahora text-center m-4 p-2">
             <h2> POPULAR AHORA</h2>
         </div>
         
         <!-- SLIDER HORIZONTAL "MAS POPULAR" -->
 
-            <div class="row sliderHorizontal d-flex m-5 p-2">
+            <div class="row slider-horizontal d-flex m-5 p-2">
                 <div class="card">
-                    <div class="imagenesMasPopular">
+                    <div class="imagenes-mas-popular">
                         <img src="img/prenda.png" alt="disfraz" class="img-fluid">
                     </div>
                     <h3>Vestido Princesa</h3>
@@ -250,7 +248,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="imagenesMasPopular">
+                    <div class="imagenes-mas-popular">
                         <img src="img/prenda2.png" alt="disfraz" class="img-fluid">
                     </div>
                     <h3>Disfraz Spider-Man</h3>
@@ -258,7 +256,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="imagenesMasPopular">
+                    <div class="imagenes-mas-popular">
                         <img src="img/prenda.png" alt="disfraz" class="img-fluid">
                     </div>
                     <h3>Disfraz Lady Bug</h3>
@@ -266,7 +264,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="imagenesMasPopular">
+                    <div class="imagenes-mas-popular">
                         <img src="img/prenda2.png" alt="disfraz" class="img-fluid">
                     </div>
                     <h3>Disfraz Capitan America</h3>
@@ -274,21 +272,28 @@
                 </div>
 
                 <div class="card">
-                    <div class="imagenesMasPopular">
+                    <div class="imagenes-mas-popular">
                         <img src="img/prenda.png" alt="disfraz" class="img-fluid">
-                    </div>
-                    <h3>Disfraz Among us</h3>
-                    <p>$3500</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagenesMasPopular">
-                        <img src="img/prenda2.png" alt="disfraz" class="img-fluid">
                     </div>
                     <h3>Vestido Elsa Frozen</h3>
                     <p>$3500</p>
                 </div>
 
+                <div class="card">
+                    <div class="imagenes-mas-popular">
+                        <img src="img/prenda2.png" alt="disfraz" class="img-fluid">
+                    </div>
+                    <h3>Disfraz Among Us</h3>
+                    <p>$3500</p>
+                </div>
+
+            </div>
+
+            <!-- BOTON -->
+            <div class="row contenedor-boton-ver">
+                <button class="boton-ver" onclick="window.location.href='pages/productos.html'">
+                    <a href="pages/productos.html">VER TODOS LOS PRODUCTOS</a>
+                </button>
             </div>
 
 
@@ -299,48 +304,32 @@
 
     <footer class="container-fluid">
 
-        <div class="row">
-            <div class="col">
-                <p> Nos encontramos en calle ituzaingo, Salta capital</p>
+        <div class="row fila-footer">
+            <div class="col-lg-6 col-sm-12 col-sm d-flex justify-content-start p-1">
+                <p class="texto-footer-pc">Copyright © 2023 Bodokes Kids </p>
+
+                <p class="texto-footer-mobile">Copyright © 2023 Bodokes Kids <br> Seguinos en nuestras redes y comunicate con nosotros </p>
             </div>
 
-            <div class="col">
-                <p> Nuestras redes sociales</p>
+            <div class="col-lg-6 col-sm-12 contenedor-iconos-redes p-1">
+                <p class="texto-footer-pc2"> Seguinos en nuestras redes y comunicate con nosotros</p>
 
                 <a href="https://wa.me/message/IKSR6G27BWDHP1" target="_blank">
-                    <img class="iconosRedes" src="img/whatsapp.png" alt="Logo de Whatsapp">
+                    <img class="iconos-redes" src="img/whatsapp.png" alt="Logo de Whatsapp">
                 </a>
         
                 <a href="https://www.instagram.com/bodokeskidss/" target="_blank">
-                    <img class="iconosRedes" src="img/instagram.png" alt="Logo de Instagram">
+                    <img class="iconos-redes" src="img/instagram.png" alt="Logo de Instagram">
                 </a>
                 
                 <a href="https://www.facebook.com/profile.php?id=100063699394113" target="_blank">
-                    <img class="iconosRedes" src="img/facebook.png" alt="Logo de Facebook">
+                    <img class="iconos-redes" src="img/facebook.png" alt="Logo de Facebook">
                 </a>
             
             </div>
 
         </div>
 
-
-
-        <!-- <h4>Nuestras redes sociales</h4> -->
-    
-        <!-- <a href="https://wa.me/message/IKSR6G27BWDHP1" target="_blank">
-            <img class="iconosRedes" src="img/whatsapp.png" alt="Logo de Whatsapp">
-        </a>
-
-        <a href="https://www.instagram.com/bodokeskidss/" target="_blank">
-            <img class="iconosRedes" src="img/instagram.png" alt="Logo de Instagram">
-        </a>
-        
-        <a href="https://www.facebook.com/profile.php?id=100063699394113" target="_blank">
-            <img class="iconosRedes" src="img/facebook.png" alt="Logo de Facebook">
-        </a> -->
-        
-
-        <!-- <p>BODOKIDS 2023 © Todos los derechos reservados</p> -->
     </footer>
 
     <!-- script JS bootstrap -->

@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-family: 'Lilita One', cursive;
     color: rgb(39, 39, 39);
@@ -31,7 +32,7 @@ header .btn img{
     height: 20px;
 }
 
-header .contenedorLogo img{
+header .contenedor-logo img{
     width: 22vh;
     margin-top: -0.8rem;
 }
@@ -42,11 +43,11 @@ header nav ul li a{
     text-decoration: none;
 }
 
-header .navSoloCelular{
+header .nav-solo-celular{
     display: none;
 }
 
-header .contenedorLogo2{
+header .contenedor-logo2{
     width: 50%;
 }
 
@@ -81,24 +82,17 @@ main .iconosMain{
     margin: 0 auto;
 }
 
-/* main .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    
-} */
-
-.textoPopularAhora{
-border-top: 1px black solid;
+.texto-popular-ahora{
+    border-top: 1px black solid;
 }
 
-.sliderHorizontal{
+.slider-horizontal{
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
 }
 
-.sliderHorizontal .card{
+.slider-horizontal .card{
     flex: 0 0 auto;
     margin-right: 1rem;
     max-width: 250px;
@@ -107,16 +101,25 @@ border-top: 1px black solid;
     border-radius: 10%;
 }
 
-.card .imagenesMasPopular {
+.card .imagenes-mas-popular {
     height: 200px;
     width: 200px;
 }
 
-.imagenesMasPopular img {
+.imagenes-mas-popular img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 10%;
+}
+
+.imagenes-mas-popular{
+    transition: 0.5s;
+}
+
+.imagenes-mas-popular:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .card h3{
@@ -125,18 +128,73 @@ border-top: 1px black solid;
     font-weight: 500;
 }
 
+.contenedor-boton-ver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boton-ver {
+    margin-bottom: 5rem;
+    background-color: #bde0fe ;
+    color: #1f93ff;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 45px;
+    transition: 0.3s;
+}
+
+
+.boton-ver:hover{
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #0054a3;
+    color: #fff;
+}
+
+.boton-ver a{
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* /////// ESTILOS DEL MAIN DE CONTACTO /////////*/
+
+main .texto-contacto img{
+    height: 25px;
+    width: 25px;
+}
+
+.contenedor-seguinos img{
+    transition: 0.5s;
+}
+
+.contenedor-seguinos img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* ///////////////////////// */
+
 /* Estilos del footer */
 
 footer{
     background-color: rgb(255, 200, 221);
 }
 
+footer .contenedor-iconos-redes{
+    display: flex;
+    justify-content: flex-end;
+}
 
-.iconosRedes{
-    
+.texto-footer-mobile {
+    display: none;
+}
+
+.iconos-redes{ 
     width: 32px;
     height: 32px;
-    display: inline-block;
     margin-left: 15px;
 }
 
@@ -144,12 +202,12 @@ footer{
 
 @media screen and (max-width:1024px) {
 
-    header .contenedorLogo img{
+    header .contenedor-logo img{
         width: 15vh;
         margin-top: -0.8rem;
     }
 
-    header .navSoloCelular {
+    header .nav-solo-celular {
         display: block;
     }
 
@@ -157,7 +215,7 @@ footer{
         display: none;
     }
 
-    header .segundaFilaHeader {
+    header .segunda-fila-header {
         display: none;
     }
 
@@ -168,12 +226,12 @@ footer{
 
 @media screen and (max-width:576px) {
 
-    header .contenedorLogo img{
+    header .contenedor-logo img{
         width: 15vh;
         margin-top: -0.8rem;
     }
 
-    header .navSoloCelular {
+    header .nav-solo-celular {
         display: block;
     }
 
@@ -181,9 +239,21 @@ footer{
         display: none;
     }
 
-    header .segundaFilaHeader {
+    header .segunda-fila-header {
         display: none;
     }
 
-   
+
+    footer .texto-footer-pc, .texto-footer-pc2{
+        display: none;
+    }
+
+    footer .texto-footer-mobile{
+        display: block;
+    }
+
+    footer .contenedor-iconos-redes{
+        justify-content: space-around;
+    }
+
 }

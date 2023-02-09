@@ -18,57 +18,226 @@
 </head>
 <body>
     
-    <header>
+    <header class="container-fluid">
 
-        <div class="contenedorLogo">
-            <img src="../img/logo.png" alt="Logo de Bodokes Kids">
+        <div class="row primera-fila-header">
+
+            <div class="col row columna-buscador align-items-center ms-2">
+
+                <!-- BUSCADOR -->
+                <nav class="navbar buscador">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">
+                            <img src="../img/lupa.png" alt="Icono de lupa">
+                        </button>
+                        </form>
+                    </div>
+                </nav>
+
+                <!-- NAV QUE SOLO APARECE EN CELULAR -->
+
+                <nav class="navbar nav-solo-celular">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header contenedor-logo2 mx-auto">
+                                <img src="../img/logo2.png" alt="Bodokes Kids" class="img-fluid">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../index.html">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sobreNosotros.html">NOSOTROS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="talles.html">TALLES</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">
+                                        <img src="../img/lupa.png" alt="Icono de lupa">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                  
+
+            </div>
+
+            <div class="col columna-logo">
+
+                <!-- IMAGEN LOGO -->
+                <div class="contenedor-logo">
+                    <img src="../img/logo.png" alt="Logo de Bodokes Kids">
+                </div>
+            </div>
+
+            <div class="col columna-botones d-flex justify-content-end align-items-center">
+
+                <!-- BOTON PERFIL -->
+
+                <button type="button" class="boton-perfil btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../img/perfil.png" alt="Icono de perfil">
+                </button>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">No disponible por el momento!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Todavia estamos trabajando en esta funcion :)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- BOTON CARRITO -->
+
+                <button type="button" class="boton-carrito btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../img/carrito.png" alt="Icono de carrito de compras">
+                </button>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">No disponible por el momento!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Todavia estamos trabajando en esta funcion :)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- menu de navegacion -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">HOME</a></li>
-                <li>
-                    <a href="productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="sobreNosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="talles.html">TALLES</a>
-                </li>
-            </ul>
-        </nav>
+
+        <!-- NAVBAR de pc -->
+
+        <div class="row segunda-fila-header">
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobreNosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="talles.html">TALLES</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </div>
+
+
     </header>
 
-    <main>
-        <h1>Contacto</h1>
+    <main class="container-fluid">
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quis tempore, laudantium eaque, dolore earum fugiat ratione rem provident facere omnis. Et ipsum provident eveniet nisi placeat exercitationem, voluptas libero.</p>
+        <div class="row">
+            <div class="col contenedor-banner-contacto">
+                <img src="../img/contacto.png" class="img-fluid" alt="banner de contacto">
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-5 col-sm-10 my-5 texto-contacto">
+                <p>Podes contactarnos mediante: <br><br>
+                    <img src="../img/whatsapp.png" alt="icono de whatsapp"> +54 9 387 602-1589 <br><br>
+                    <img src="../img/email.png" alt="icono de email"> franco.garnica@yahoo.com <br><br> Nos encontramos en: <br><br>
+                    <img src="../img/mapa.png" alt="icono de mapa"> Ituzaingo 227, Argentina, Salta Capital
+                </p>
+            </div>
+            
+            <div class="col-lg-5 col-sm-10 my-4 contenedor-iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0915452735985!2d-65.41497375524649!3d-24.792318629035883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a505ed975b%3A0x3132f42df65530c3!2sItuzaing%C3%B3%20227%2C%20Salta!5e0!3m2!1ses-419!2sar!4v1675937966551!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col d-flex justify-content-center m-4 contenedor-seguinos">
+                <p>Seguinos: <a href="https://www.instagram.com/bodokeskidss/"><img src="../img/instagram.png" alt="icono de instagram"></a> <a href="https://www.facebook.com/profile.php?id=100063699394113"><img src="../img/facebook.png" alt="icono de facebook"></a></p>
+            </div>
+        </div>
+        
     </main>
 
-    <footer>
-        <h4>Nuestras redes sociales</h4>
+    <!-- ////////////////////////// FOOTER //////////////////////// -->
 
-        <!-- link de whatsapp -->
-        
-        <a href="https://wa.me/message/IKSR6G27BWDHP1" target="_blank">
-            <img class="iconosRedes" src="../img/whatsapp.png" alt="Logo de Whatsapp">
-        </a>
+    <footer class="container-fluid">
 
-        <a href="https://www.instagram.com/bodokeskidss/" target="_blank">
-            <img class="iconosRedes" src="../img/instagram.png" alt="Logo de Instagram">
-        </a>
-        
-        <a href="https://www.facebook.com/profile.php?id=100063699394113" target="_blank">
-            <img class="iconosRedes" src="../img/facebook.png" alt="Logo de Facebook">
-        </a>
-        
+        <div class="row fila-footer">
+            <div class="col-lg-6 col-sm-12 col-sm d-flex justify-content-start p-1">
+                <p class="texto-footer-pc">Copyright © 2023 Bodokes Kids </p>
 
-        <p>BODOKIDS 2023 © Todos los derechos reservados</p>
+                <p class="texto-footer-mobile">Copyright © 2023 Bodokes Kids <br> Seguinos en nuestras redes y comunicate con nosotros </p>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 contenedor-iconos-redes p-1">
+                <p class="texto-footer-pc2"> Seguinos en nuestras redes y comunicate con nosotros</p>
+
+                <a href="https://wa.me/message/IKSR6G27BWDHP1" target="_blank">
+                    <img class="iconos-redes" src="../img/whatsapp.png" alt="Logo de Whatsapp">
+                </a>
+        
+                <a href="https://www.instagram.com/bodokeskidss/" target="_blank">
+                    <img class="iconos-redes" src="../img/instagram.png" alt="Logo de Instagram">
+                </a>
+                
+                <a href="https://www.facebook.com/profile.php?id=100063699394113" target="_blank">
+                    <img class="iconos-redes" src="../img/facebook.png" alt="Logo de Facebook">
+                </a>
+            
+            </div>
+
+        </div>
+
     </footer>
 
     <!-- script JS bootstrap -->
