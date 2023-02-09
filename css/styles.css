@@ -58,17 +58,20 @@ header .contenedorLogo2{
 /* ANIMACION */
 
 .img-ninios {
+    opacity: 80%;
     transition: 0.5s;
 }
 
 .img-ninios:hover {
-    transform: scale(1.1);
-    opacity: 70%;
+    transform: scale(0.8);
+    opacity: 100%;
     transition: 0.5s;
 }
 
+/* //////////// */
+
 main .columnaInfo{
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -85,6 +88,42 @@ main .iconosMain{
     
 } */
 
+.textoPopularAhora{
+border-top: 1px black solid;
+}
+
+.sliderHorizontal{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.sliderHorizontal .card{
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    max-width: 250px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.card .imagenesMasPopular {
+    height: 200px;
+    width: 200px;
+}
+
+.imagenesMasPopular img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.card h3{
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: 500;
+}
 
 /* Estilos del footer */
 
