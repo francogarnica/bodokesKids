@@ -177,6 +177,14 @@ main .texto-contacto img{
 
 /* ///////////////////////// */
 
+/* /////// ESTILOS DEL MAIN DE NOSOTROS /////////*/
+
+main .texto-nosotros{
+    text-align: justify;
+}
+
+/* ///////////////////////// */
+
 /* Estilos del footer */
 
 footer{
