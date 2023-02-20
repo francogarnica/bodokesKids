@@ -185,6 +185,26 @@ main .texto-nosotros{
 
 /* ///////////////////////// */
 
+/* /////// ESTILOS DEL MAIN DE PRODUCTOS /////////*/
+
+.contenedor-grilla-productos{
+    margin: 2rem;
+    padding: 2rem;
+    gap: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: repeat(2,1fr) ;
+}
+
+.contenedor-grilla-productos h2, h3{
+    text-align: center;
+    font-size: 22px;
+}
+
+
+/* ///////////////////////// */
+
 /* Estilos del footer */
 
 footer{
