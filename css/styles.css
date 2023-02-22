@@ -194,11 +194,6 @@ main .texto-nosotros{
 
 /* /////// ESTILOS DEL MAIN DE PRODUCTOS /////////*/
 
-.fila-filtradores{
-    /* FALTA CENTRAR LOS FILTRADORES D: */
-}
-
-
 
 /* ESTILOS DE LOS PRODUCTOS */
 
@@ -286,13 +281,21 @@ main .texto-nosotros{
 
 /* Estilos del footer */
 
+
+
 footer{
     background-color: rgb(255, 200, 221);
 }
 
 footer .contenedor-iconos-redes{
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
+}
+
+.contenedor-iconos-redes a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .texto-footer-mobile {
@@ -303,6 +306,12 @@ footer .contenedor-iconos-redes{
     width: 32px;
     height: 32px;
     margin-left: 15px;
+}
+
+.contenedor-texto-redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* MQ DE TABLET (EN PROCESO)*/
@@ -334,6 +343,26 @@ footer .contenedor-iconos-redes{
         grid-template-columns: repeat(3, 1fr) ;
         grid-template-rows: repeat(17, 1fr);
     }
+
+    footer .texto-footer-pc, .texto-footer-pc2{
+        display: none;
+    }
+
+    footer .texto-footer-mobile{
+        display: block;
+        
+    }
+
+    footer .contenedor-iconos-redes{
+        justify-content: space-around;
+    }
+
+    .contenedor-texto-redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
 }
 /* MQ de MOBILE */
@@ -384,8 +413,10 @@ footer .contenedor-iconos-redes{
         font-size: 0.6rem;
     }
 
-    .contenedor-grilla-productos p{
-        font-size: 17px;
+    .contenedor-texto-redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     footer .texto-footer-pc, .texto-footer-pc2{
