@@ -9,12 +9,18 @@
     box-sizing: border-box;
 }
 
+/* ESTILOS GENERALES DE TODA LA PAGINA */
 
 body{
     font-family: 'Lilita One', cursive;
     color: rgb(39, 39, 39);
     font-size: 1.2rem;
 }
+
+.contenedor-banner{
+    padding: 0;
+}
+
 
 /* ESTILOS DE HEADER */
 
@@ -181,13 +187,27 @@ main .texto-contacto img{
 
 /* /////// ESTILOS DEL MAIN DE NOSOTROS /////////*/
 
-main .texto-nosotros{
+main .texto-nosotros p{
     text-align: justify;
+    font-size: 1em;
+}
+
+.contenido-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-tienda {
+    height: 80vh;
+    width: 80vh;
+
 }
 
 .imagen-tienda img{
-    height: 75%;
-    width: 75%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* ///////////////////////// */
@@ -344,6 +364,11 @@ footer .contenedor-iconos-redes{
         grid-template-rows: repeat(17, 1fr);
     }
 
+    .imagen-tienda {
+        height: 60vh;
+        width: 60vh;
+    }
+
     footer .texto-footer-pc, .texto-footer-pc2{
         display: none;
     }
@@ -396,6 +421,10 @@ footer .contenedor-iconos-redes{
         display: none;
     }
 
+    .imagen-tienda {
+        height: 50vh;
+        width: 50vh;
+    }
 
     #filtrador{
         font-size: 0.8rem;
