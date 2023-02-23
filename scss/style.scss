@@ -1,0 +1,92 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//IMPORTS
+@import "html/home";
+@import "html/productos";
+@import "html/contacto";
+@import "html/nosotros";
+@import "html/banners";
+
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+/* ESTILOS GENERALES */ 
+
+body{
+    font-family: 'Lilita One', cursive;
+    color: rgb(39, 39, 39);
+    font-size: 1.2rem;
+}
+
+/* HEADER ( IGUAL EN TODOS LOS HTML) */
+
+header{
+    background-color: $color-header;
+    @include flex-centrado;
+    display: block;
+    width: 100%;
+    .primera-fila-header{
+        .btn img{
+            @include tamanio(20px, 20px);
+        }
+        .columna-buscador{
+            .nav-solo-celular{
+                display: none;
+                .contenedor-logo2{
+                    width: 50%;
+                }
+            }
+        }
+
+        .columna-logo{
+            @include flex-centrado;
+            .contenedor-logo img{
+                width: 22vh;
+                margin-top: -0.8rem;
+            }
+        }
+    }
+    nav{
+        ul{
+            li a{
+                color: rgb(20, 20, 20);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*FOOTER (IGUAL EN TODOS LOS HTML) */
+
+footer{
+    background-color: $color-footer;
+    .fila-footer{
+        .contenedor-texto-redes{
+            @include flex-parametros(space-between, center);
+            .texto-footer-mobile{
+                display: none
+            }
+        }
+        .contenedor-iconos-redes{
+            @include flex-parametros(end, center);
+            
+            .iconos-redes{
+                @include tamanio(32px,32px);
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+
+@import "mediaqueries/mqtablet";
+
+@import "mediaqueries/mqcel";

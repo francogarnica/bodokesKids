@@ -1,0 +1,24 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.main-nosotros{
+    .contenido-nosotros{
+        @include flex-centrado;
+        .texto-nosotros{
+            p{
+                @include tipografia(1em,black,justify);
+            }
+        }
+    }
+    .imagen-tienda{
+        @include tamanio(80vh, 80vh);
+        img{
+            @include tamanio(100%, 100%);
+            object-fit: cover;
+        }
+    }
+}
+
+@import "../mediaqueries/nosotros-mqtablet";
+@import "../mediaqueries/nosotros-mqcel";

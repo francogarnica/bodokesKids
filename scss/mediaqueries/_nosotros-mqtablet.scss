@@ -1,0 +1,11 @@
+/* MQ de tablet de NOSOTROS */
+
+@import "../utilidades/mixin";
+
+@media screen and (max-width:1024px){
+    .main-nosotros{
+        .imagen-tienda{
+                @include tamanio(70vh,60vh);
+        }
+    }
+}

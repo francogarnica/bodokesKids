@@ -1,0 +1,21 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.main-contacto{
+    .texto-contacto{
+        img{
+            @include tamanio(25px, 25px);
+        }
+    }
+
+    .contenedor-seguinos{
+        img{
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+        }
+    }
+}

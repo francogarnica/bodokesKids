@@ -1,0 +1,35 @@
+//MIXIN CON PARAMETROS
+
+@mixin tamanio($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin tipografia ($size, $color-tipografia, $alineacion){
+    font-size: $size;
+    color: $color-tipografia;
+    text-align: $alineacion;
+}
+
+@mixin flex-parametros ($justificar-contenido,$alinear-items){
+    display: flex;
+    justify-content: $justificar-contenido;
+    align-items: $alinear-items;
+}
+
+@mixin grid-parametros ($columnas, $filas){
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+}
+
+//MIXIN SIN PARAMETROS
+
+@mixin flex-centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

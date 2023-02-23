@@ -1,0 +1,52 @@
+/* MQ de celular */
+
+@import "../utilidades/mixin";
+
+
+@media screen and (max-width:576px) {
+
+    header{
+        .primera-fila-header{
+            .columna-buscador{
+                .buscador{
+                    display: none;
+                }
+                .nav-solo-celular{
+                    display: block;
+                }
+            }
+            .columna-logo{
+                .contenedor-logo{
+                    img{
+                        width: 15vh;
+                        margin-top: -0.8rem;
+                    }
+                }
+            }
+        }
+        .segunda-fila-header{
+            display: none;
+        }
+    }
+
+    footer{
+        .fila-footer{
+            .contenedor-texto-redes{
+                @include flex-centrado;
+                .texto-footer-pc{
+                    display: none;
+                }
+                .texto-footer-mobile{
+                    display: block;
+                }
+            }
+            .contenedor-iconos-redes{
+                justify-content: space-around;
+                .texto-footer-pc2{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

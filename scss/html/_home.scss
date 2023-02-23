@@ -1,0 +1,88 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* MAIN DE INICIO */
+
+.main-inicio{
+    .img-ninios {
+        opacity: 80%;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(0.8);
+            opacity: 100%;
+            transition: 0.5s;
+        }
+    }
+
+    .columna-info{
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        .iconos-main{
+            width: 16%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .texto-popular-ahora{
+        border-top: 1px black solid;
+    }
+
+    .slider-horizontal{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        .disfraz-popular{
+            border: 1px solid black;
+            flex: 0 0 auto;
+            margin-right: 1rem;
+            max-width: 250px;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10%;
+            h3{
+                @extend %texto-disfraz-popular;
+            }
+            p{
+                @extend %texto-disfraz-popular;
+            }
+            .imagenes-mas-popular{
+                @include tamanio(200px,200px);
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+                img{
+                    @include tamanio(100%,100%);
+                    object-fit: cover;
+                    border-radius: 10%;
+                }
+            }
+        }
+    }
+
+    .contenedor-boton-ver{
+        @include flex-centrado;
+        .boton-ver{
+            @include tamanio(300px,45px);
+            margin-bottom: 5rem;
+            background-color: #bde0fe ;
+            color: #1f93ff;
+            border: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            &:hover{
+                background-color: #3b82f6;
+                box-shadow: 0 0 0 5px #0054a3;
+                color: #fff;
+            }
+            a{
+                color: inherit;
+                text-decoration: none;
+                background-color: transparent;
+            }
+        }
+    }
+}

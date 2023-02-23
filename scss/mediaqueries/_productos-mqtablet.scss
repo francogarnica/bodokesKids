@@ -1,0 +1,16 @@
+/* MQ de TABLET de productos */
+
+@import "../utilidades/mixin";
+
+@media screen and (max-width:1024px){
+    .main-productos{
+        .fila-filtradores{
+            p{
+                display: none;
+            }
+        }
+        .contenedor-grilla-productos{
+            @include grid-parametros(repeat(3,1fr),repeat(17,1fr));
+        }
+    }
+}
