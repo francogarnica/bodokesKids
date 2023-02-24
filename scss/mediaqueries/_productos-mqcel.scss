@@ -1,27 +1,29 @@
 /* MQ de Celular de productos */
 @import "../utilidades/mixin";
 
-.main-productos{
-    .fila-filtradores{
-        p{
-            display: none;
-        }
-        #filtrador{
-            font-size: 0.8rem;
-            option{
-                font-size: 0.6rem;
+@media screen and (max-width:576px){
+    .main-productos{
+        .fila-filtradores{
+            p{
+                display: none;
+            }
+            #filtrador{
+                font-size: 0.8rem;
+                option{
+                    font-size: 0.6rem;
+                }
+            }
+            #filtrador-dos{
+                font-size: 0.8rem;
+                option{
+                    font-size: 0.6rem;
+                }
             }
         }
-        #filtrador-dos{
-            font-size: 0.8rem;
-            option{
-                font-size: 0.6rem;
-            }
+
+        .contenedor-grilla-productos{
+            @include grid-parametros(repeat(2,1fr),repeat(25,1fr));
         }
     }
 
-    .contenedor-grilla-productos{
-        @include grid-parametros(repeat(2,1fr),repeat(25,1fr));
-    }
 }
-

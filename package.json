@@ -1,7 +1,7 @@
 {
-  "name": "proyecto",
+  "name": "bodokes-kids",
   "version": "1.0.0",
-  "description": "",
+  "description": "pagina web de un local de disfraces",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

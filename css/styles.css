@@ -149,23 +149,21 @@
     grid-template-rows: repeat(17, 1fr); } }
 
 /* MQ de Celular de productos */
-.main-productos .fila-filtradores p {
-  display: none; }
-
-.main-productos .fila-filtradores #filtrador {
-  font-size: 0.8rem; }
-  .main-productos .fila-filtradores #filtrador option {
-    font-size: 0.6rem; }
-
-.main-productos .fila-filtradores #filtrador-dos {
-  font-size: 0.8rem; }
-  .main-productos .fila-filtradores #filtrador-dos option {
-    font-size: 0.6rem; }
-
-.main-productos .contenedor-grilla-productos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(25, 1fr); }
+@media screen and (max-width: 576px) {
+  .main-productos .fila-filtradores p {
+    display: none; }
+  .main-productos .fila-filtradores #filtrador {
+    font-size: 0.8rem; }
+    .main-productos .fila-filtradores #filtrador option {
+      font-size: 0.6rem; }
+  .main-productos .fila-filtradores #filtrador-dos {
+    font-size: 0.8rem; }
+    .main-productos .fila-filtradores #filtrador-dos option {
+      font-size: 0.6rem; }
+  .main-productos .contenedor-grilla-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(25, 1fr); } }
 
 .main-inicio .slider-horizontal .disfraz-popular h3, .main-inicio .slider-horizontal .disfraz-popular p {
   text-align: center;
